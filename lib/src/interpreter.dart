@@ -153,8 +153,8 @@ class Interpreter {
 
   /// Updates allocations for all tensors.
   void allocateTensors() {
-    checkState(tfliteBinding.TfLiteInterpreterAllocateTensors(_interpreter) ==
-        TfLiteStatus.kTfLiteOk);
+    // checkState(tfliteBinding.TfLiteInterpreterAllocateTensors(_interpreter) ==
+    //     TfLiteStatus.kTfLiteOk);
     _allocated = true;
   }
 
